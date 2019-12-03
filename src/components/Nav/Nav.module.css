@@ -1,0 +1,27 @@
+.nav{
+    list-style: none;
+    line-height: 50px;
+    background-color: #4C4B4B;
+    color: #ffffff;
+}
+.navList{
+    float: left;
+    width: auto;
+    padding:0 10px;
+}
+.navItemsRight{
+    float: right;
+    padding:0 10px;
+}
+.logo{
+    font-weight: bolder;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+.nav a{
+    text-decoration: none;
+    color: inherit;
+}
