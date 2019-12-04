@@ -1,0 +1,7 @@
+.addFormContainer{
+    position: absolute;
+    bottom:5px;
+    height: 250px;
+    width: 300px;
+    border:1px solid black;
+}

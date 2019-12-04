@@ -8,20 +8,18 @@ const range = len => {
   return arr
 }
 
-const newPerson = () => {
-  const statusChance = Math.random()
+const newNote = () => {
+  const progress = Math.random()
   return {
-    firstName: namor.generate({ words: 1, numbers: 0 }),
-    lastName: namor.generate({ words: 1, numbers: 0 }),
-    age: Math.floor(Math.random() * 30+1),
-    visits: Math.floor(Math.random() * 100),
-    progress: Math.floor(Math.random() * 100),
+    content: namor.generate({ words: 8, numbers: 0 }),
+    date: Date.now(),
+    progress: Math.floor(progress * 100),
     status:
-      statusChance > 0.66
-        ? 'relationship'
-        : statusChance > 0.33
-        ? 'complicated'
-        : 'single',
+      progress > 0.85
+        ? 'Completed'
+        : progress > 0.50
+        ? 'Pending'
+        : 'Working on it',
   }
 }
 
@@ -30,7 +28,7 @@ export default function makeData(...lens) {
     const len = lens[depth]
     return range(len).map(d => {
       return {
-        ...newPerson()
+        ...newNote()
       }
     })
   }

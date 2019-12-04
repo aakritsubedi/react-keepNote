@@ -1,19 +1,16 @@
-import React, {Component} from 'react';
+import React from 'react';
 import styles from './Input.module.css';
 
-class Input extends Component{
-    
-    render(){
+function Input(props){
         let input = (
-            <div className={this.props.isInline ? styles.formInline : styles.formBlock}>
+            <div className={props.isInline ? styles.formInline : styles.formBlock}>
                 {
-                    this.props.title  ? <label>{this.props.title}:</label>  : ''
+                    props.title  ? <label>{props.title}:</label>  : ''
                 }
-                <input type={this.props.type} placeholder={this.props.placeholder} className={styles.simple} onChange={this.props.onChange} id={this.props.id} onBlur={this.props.onBlur} />
+                <input type={props.type} placeholder={props.placeholder} className={styles.simple} onChange={props.onChange} id={props.id} onBlur={props.onBlur} />
             </div>
         );
         return input;
-    }
 }
 
 export default Input;

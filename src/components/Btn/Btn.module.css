@@ -1,0 +1,29 @@
+.btn{
+    line-height: 15px;
+    padding:3px 10px;
+    border:none;
+    color:white;
+    border-radius: 2px;
+    margin:0 5px;
+}
+.btnSuccess{
+    background-color: green;
+}
+.btnWarning{
+    background-color: orangered;
+}
+.btnDanger{
+    background-color: red;
+}
+.add{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    position: absolute;
+    bottom: 5px;
+    right: 5px;
+    background-color: green;
+    color:#ffffff;
+    font-weight: bolder;
+    font-size: 20px;
+}
