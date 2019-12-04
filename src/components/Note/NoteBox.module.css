@@ -1,0 +1,46 @@
+.noteBox{
+    height: 100px;
+    width: 28.5%;
+    margin:10px 1.5%;
+    float: left;
+    border:1px solid #f4f4f4;
+    color:#ffffff;
+    background-color: #4C4B4B;
+    padding:5px 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    -moz-box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+    box-shadow: 10px 10px 5px 0px rgba(0,0,0,0.75);
+}
+.title{
+    display: block;
+    font-weight: bold;
+    font-size: 17px;
+    text-decoration-line: underline;
+    text-decoration-style: double;
+}
+.date{
+    float:right;
+    font-size: 10px;
+    text-decoration: underline;
+}
+.content{
+    text-align: justify;
+    text-indent: 10px;
+    font-size: 14px;
+    margin-top: 5px;
+}
+.optBtn{
+    line-height: 10px;
+    padding:10px 0;
+    text-align: right;
+    margin-top: 15px;
+}
+.clearfix {
+    overflow: auto;
+}
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+  }

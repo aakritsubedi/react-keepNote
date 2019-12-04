@@ -16,7 +16,7 @@ function Nav(props){
                 </li>
                 {navItems}
                 <li className={styles.navItemsRight}>
-                    <Input type='text' isInline={true}  placeholder="Search ..." id="search-box"/>
+                    <Input type='text' isInline={true}  placeholder="Search ..." id="search-box" onChange={props.search}/>
                 </li>
             </ul>
         );

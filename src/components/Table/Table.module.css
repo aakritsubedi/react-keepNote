@@ -2,7 +2,13 @@
     width:90%;
     border:1px solid #000000;
     text-align: left;
-    margin:5px auto;
+    margin:15px auto;
 }
-
-
+.tblContainer{
+    padding:0 5px
+}
+.tblTitle{
+    margin-top:10px;
+    text-decoration: underline;
+    text-align: center;
+}

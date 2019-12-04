@@ -17,9 +17,9 @@
 }
 .btnAdd{
     border-radius: 50%;
-    height: 50px;
-    width: 50px;
-    position: absolute;
+    height: 40px;
+    width: 40px;
+    position: fixed;
     bottom: 5px;
     right: 5px;
     background-color: green;

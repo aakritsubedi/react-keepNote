@@ -26,3 +26,7 @@
 .danger{
     color: red;
 }
+.noteContainer{
+    margin:2px auto;
+    width: 90%;
+}

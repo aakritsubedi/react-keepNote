@@ -23,6 +23,8 @@ const newNote = () => {
         : progress > 0.50
         ? 'Pending'
         : 'Working on it',
+    deleted: false,
+    edit: false,
   }
 }
 

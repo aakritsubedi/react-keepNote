@@ -9,7 +9,7 @@ function AddNoteFrom(props){
         <div className={styles.addFormContainer}>
             <Input title='Title' id='new-title' placeholder='Enter title'/>
             <Textarea title='Content' id='new-content' placeholder='Enter description' />
-            <Btn title='Add' onClick={props.addNew}  />
+            <Btn title='Add' onClick={props.save}  />
             <Btn title='Cancel' onClick={props.change}  />
         </div>
     );

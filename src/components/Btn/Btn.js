@@ -4,7 +4,7 @@ import styles from './Btn.module.css';
 function Btn(props){
         let additionalClass=''
         if(props.title === 'Delete') additionalClass = styles.btnDanger
-        else if(props.title === 'Cancel') additionalClass = styles.btnWarning
+        else if(props.title === 'Cancel' || props.title==='Edit') additionalClass = styles.btnWarning
         else if(props.title === '+') additionalClass = styles.btnAdd
         else additionalClass = styles.btnSuccess 
         let btn = (
