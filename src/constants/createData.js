@@ -1,4 +1,5 @@
 import namor from 'namor'
+import moment from 'moment'
 
 const range = len => {
   const arr = []
@@ -14,7 +15,7 @@ const newNote = () => {
     id: Math.floor(Math.random() * 100),
     title: namor.generate({ words: 1, numbers: 0 }),
     content: namor.generate({ words: 4, numbers: 0 }),
-    date: Date.now(),
+    date: moment(Date.now()).format("Do MMM YYYY"),
     progress: Math.floor(progress * 100),
     status:
       progress > 0.85

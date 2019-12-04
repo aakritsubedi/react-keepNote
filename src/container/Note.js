@@ -21,7 +21,7 @@ class Note extends Component{
                 },
                 {
                     Header: "Title",
-                    accessor: "title"
+                    accessor: "title",
                 },
                 {
                     Header: "Content",
@@ -29,15 +29,45 @@ class Note extends Component{
                 },
                 {
                     Header: "Date",
-                    accessor: "date"
+                    accessor: "date",
+                    style: {
+                      textAlign: 'center'
+                    }
                 },
                 {
                     Header: "Progress",
-                    accessor: "progress"
+                    accessor: "progress",
+                    Cell: row => <div className='myProgress'><div className='myBar' style={{width:row.value+'%'}}>{row.value+'%'}</div></div>
                 },
                 {
                     Header: "Status",
-                    accessor: "status"
+                    accessor: "status",
+                    Cell: row => (row.value === 'Pending' ? <span className='pending'>{row.value}</span> : (row.value === 'Working on it') ? <span className='danger'>{row.value}</span> : <span className='success'>{row.value}</span> ),
+                    filterMethod: (filter, row) => {
+                      if (filter.value === "all") {
+                        return true;
+                      }
+                      if (filter.value === "Completed") {
+                        return row[filter.id] === 'Completed';
+                      }
+                      else if (filter.value === "Pending") {
+                        return row[filter.id] === 'Pending';
+                      }
+                      else{
+                        return row[filter.id] === 'Working on it';
+                      }
+                    },
+                    Filter: ({ filter, onChange }) =>
+                      <select
+                        onChange={event => onChange(event.target.value)}
+                        style={{ width: "100%" }}
+                        value={filter ? filter.value : "all"}
+                      >
+                        <option value="all">Show All</option>
+                        <option value="Completed">Completed</option>
+                        <option value="Pending">Pending</option>
+                        <option value="Working on it">Working on it</option>
+                      </select>
                 }
       ];
       this.navItems=[
