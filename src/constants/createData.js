@@ -11,7 +11,9 @@ const range = len => {
 const newNote = () => {
   const progress = Math.random()
   return {
-    content: namor.generate({ words: 8, numbers: 0 }),
+    id: Math.floor(Math.random() * 100),
+    title: namor.generate({ words: 1, numbers: 0 }),
+    content: namor.generate({ words: 4, numbers: 0 }),
     date: Date.now(),
     progress: Math.floor(progress * 100),
     status:

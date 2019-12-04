@@ -1,5 +1,5 @@
-import React, {Component} from 'react';
-import styles from './Input.module.css';
+import React from 'react';
+import styles from './Textarea.module.css';
 
 function Textarea(props){
         let textarea = (
@@ -7,7 +7,7 @@ function Textarea(props){
                 {
                     props.title  ? <label>{props.title}:</label>  : ''
                 }
-                <textarea type={props.type} placeholder={props.placeholder} className={styles.simple} onChange={props.onChange} id={props.id} onBlur={props.onBlur} ></textarea>
+                <textarea type={props.type} placeholder={props.placeholder} className={styles.simple}  id={props.id}  ></textarea>
             </div>
         );
         return textarea;

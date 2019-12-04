@@ -2,14 +2,17 @@ import React from 'react';
 import styles from './Btn.module.css';
 
 function Btn(props){
-        let additionalClass = (props.title === 'Delete') ? styles.btnDanger : styles.btnSuccess;
+        let additionalClass=''
+        if(props.title === 'Delete') additionalClass = styles.btnDanger
+        else if(props.title === 'Cancel') additionalClass = styles.btnWarning
+        else if(props.title === '+') additionalClass = styles.btnAdd
+        else additionalClass = styles.btnSuccess 
         let btn = (
             <button className={styles.btn+' '+additionalClass} onClick={props.onClick}>{props.title}</button>
         );
-        let btnAdd = (
-            <button className={styles.btn+' '+styles.add} onClick={props.onClick}>{props.title}</button>
-        )
-        return (props.title === '+') ? btnAdd : btn;
+        
+        
+        return btn
 }
 
 export default Btn;
