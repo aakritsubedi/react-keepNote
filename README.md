@@ -5,6 +5,19 @@
     <b>KeepNote</b> is a note-taking service developed using react.js. KeepNote is available on the web and offers a variety of tools for taking notes, including text and list.
 </p>
 <hr>
+<h4>Application Screenshot</h4>
+    <div style='height:250px;width:90%;margin:0 auto;'>
+        <img src='react-keepNote.png' style='position:absolute;height:100%;width:100%;'>
+    </div>
+    <div style='width:90%;margin:0 auto;clear:both;'>
+        <div style='height:150px;width:48%;margin:0 auto;float:left;'>
+            <img src='react-keepNote1.png' style='position:absolute;height:100%;width:100%;'>
+        </div>
+        <div style='height:150px;width:48%;margin:0 auto;float:right;'>
+            <img src='react-keepNote2.png' style='position:absolute;height:100%;width:100%;'>
+        </div>
+    </div>
+<hr>
 <h4>Explaination</h4>
 <ul>
     <li>
@@ -46,11 +59,6 @@
     <li>yarn start/ npm start</li>
     <b>-all the basic installation to run react application should be configured</b>
 </ul>
-<hr>
-<h4>Application Screenshot</h4>
-    <div style='height:300px;width:90%;margin:0 auto;'>
-        <img src='react-keepNote.png' style='position:absolute;height:100%;width:100%;'>
-    </div>
 <hr>
 <h4>Extra Package</h4>
 <ul>
