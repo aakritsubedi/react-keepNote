@@ -18,7 +18,7 @@ class Note extends Component{
       this.allData();
     }
     allData(){
-      this.data = makeData(10);
+      this.data = makeData(15);
       this.columns=[
                 {
                     Header: "Id",
@@ -77,6 +77,11 @@ class Note extends Component{
                 {
                   Header: "Deleted",
                   accessor: 'deleted',
+                  show: false
+                },
+                {
+                  Header: "Edit",
+                  accessor: 'edit',
                   show: false
                 }
       ];
