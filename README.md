@@ -41,6 +41,8 @@
                     }
 
                     export default Btn;
+                    ```
+                    Initially import all the necessary libraries, other components and files(css ..). As this <b>Btn.js</b> is functional component that should return the JSX component(here variable btn) 
             </li>
         </ul>
 
