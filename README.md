@@ -53,13 +53,13 @@
     <li><a href='https://www.npmjs.com/package/react-icons' target='_blank'>react-icons</a></li>
     <li><a href='https://www.npmjs.com/package/react-moment' target='_blank'>moment</a></li>
 </ul>
-<hr>
 <code>
     <pre>
         <b>Name: </b> AAkrit Subedi
         <b>Email: </b> <a href='mailto:aakritsubedi9@gmail.com'>aakritsubedi9@gmail.com</a>
-        <b>Website: </b> <a href='http://aakritsubedi.com.np/' target='_blank'>AAkrit Subedi</a>
+        <b>Website: </b> <a href='http://aakritsubedi.com.np/' target='_blank'>aakritsubedi.com.np</a> 
         <b>Address: </b> Kathmandu,Nepal
         <b>Contact No.: </b> +977-9808858237
+        <b>Social Media: </b> <a href='https://www.linkedin.com/in/aakrit-subedi-942a5875/'>linked/aakrit-subedi-942a5875</a>|| <a href='https://www.facebook.com/aakritsubedi9'>facebook/aakritsubedi9</a> || <a href='https://www.facebook.com/aakritsubedi9'> instagram/aakrit_subedi </a> || <a href='https://www.youtube.com/channel/UCQa_5vTnUERh2qAGiObqizQ'> youtube/AAkrit Subedi</a>
     </pre>
 <code>
