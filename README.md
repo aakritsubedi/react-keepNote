@@ -9,7 +9,7 @@
     <div style='height:250px;width:90%;margin:0 auto;'>
         <img src='react-keepNote.png' style='position:absolute;height:100%;width:100%;'>
     </div>
-    <div style='width:90%;margin:0 auto;clear:both;'>
+    <div style='clear:both;'>
         <div style='height:150px;width:48%;margin:0 auto;float:left;'>
             <img src='react-keepNote1.png' style='position:absolute;height:100%;width:100%;'>
         </div>
