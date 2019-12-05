@@ -1,7 +1,9 @@
 import React, { Component } from 'react';
+
 import Nav from './../components/Nav/Nav';
 import AddNoteForm from './../components/AddNoteForm/AddNoteForm';
 import Table from './../components/Table/Table';
+import Btn from './../components/Btn/Btn';
 import NoteBox from '../components/Note/NoteBox';
 
 import moment from 'moment';
@@ -28,15 +30,21 @@ class Note extends Component {
     this.columns = [
       {
         Header: "Id",
-        accessor: "id"
+        accessor: "id",
+        filterable: false,
+        width:50,
+        maxWidth:75,
+        minWidth:40
       },
       {
         Header: "Title",
         accessor: "title",
+        sortable: false
       },
       {
         Header: "Content",
-        accessor: "content"
+        accessor: "content",
+        sortable: false
       },
       {
         Header: "Date",
@@ -48,11 +56,16 @@ class Note extends Component {
       {
         Header: "Progress",
         accessor: "progress",
+        sortable: false,
         Cell: row => <div className='myProgress' title={row.value + '% Completed'}><div className='myBar' style={{ width: row.value + '%' }}>{row.value + '%'}</div></div>
       },
       {
         Header: "Status",
         accessor: "status",
+        sortable: false,
+        width:175,
+        maxWidth:200,
+        minWidth:150,
         Cell: row => (row.value === 'Pending' ? <span className='pending'>{row.value}</span> : (row.value === 'Working on it') ? <span className='danger'>{row.value}</span> : <span className='success'>{row.value}</span>),
         filterMethod: (filter, row) => {
           if (filter.value === "all") {
@@ -89,6 +102,21 @@ class Note extends Component {
         Header: "Edit",
         accessor: 'edit',
         show: false
+      },{
+        Header: "Options",
+        Cell: row => {
+          return (
+            <Btn title='Delete' onClick={()=>this.deleteNote(row.original)}/>
+          )
+        },
+        sortable:false,
+        filterable:false,
+        width:100,
+        maxWidth:100,
+        minWidth:100,
+        style:{
+          textAlign: 'center'
+        }
       }
     ];
     this.navItems = [
@@ -184,7 +212,6 @@ class Note extends Component {
     })
   }
   render() {
-    console.log("Render");
     let noteBox = this.state.data.map(item => {
       return <NoteBox key={item.id} title={item.title} content={item.content} date={item.date} delete={() => this.deleteNote(item)} edit={() => this.editNote(item)} save={(e) => this.saveEdit(item, e)} editStatus={item.edit} />
     })

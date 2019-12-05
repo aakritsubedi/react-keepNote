@@ -18,7 +18,7 @@ function NoteBox(props){
                     <Btn title='Save' onClick={props.save}/>
 
                 }
-                <Btn title='Delete' onClick={props.delete}/>
+                {/* <Btn title='Delete' onClick={props.delete}/> */}
             </div>
         </div>
     );
