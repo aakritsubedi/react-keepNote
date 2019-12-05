@@ -22,16 +22,15 @@
         <ul>
             <li>
                 <b>src/components/Btn/Btn.js </b>
-                <code>
-                    var s = "JavaScript syntax highlighting";
-                    alert(s);
-                </code>
-                    Initially import all the necessary libraries, other components and files(css ..). As this <b>Btn.js</b> is functional component that should return the JSX component(here variable btn) 
+                    <p>Initially import all the necessary libraries, other components and files(css ..). As this <b>Btn.js</b> is functional component that should return the JSX component(here variable btn)</p>
+            </li>
+            <li>
+                <b>src/container/Note.js</b>
+                    <p>Initially import all the necessary libraries, other components and files(css ..). The containers manages all the states and functionalities so prefered as the class based component. Here Note.js container contains all the CRUD functionalites for the Note Keeping application. All the search functionalies for the search bar in the navigation is handled here.</p>
             </li>
         </ul>
-
+        <b>same paradigm is followed for all the components and container and integrated in <code>App.js</code> as per requirements. </b>
     </li>
-
 </ul>
 <hr>
 <h4>Installation</h4>
