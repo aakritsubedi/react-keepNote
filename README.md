@@ -14,10 +14,36 @@
             <li><b>src/components </b> all the components either functional or class based component</li>
             <li><b>src/constants </b> ...</li>
             <li><b>src/container </b> all the integration of the components together to form complete component with all related functionalities, generally class based component</li>
+            <li><b>src/util </b> ...</li>
         </ul>
     </li>
     <li>
         <u>Code Explaination</u>
+        <ul>
+            <li>
+                <b>src/components/Btn/Btn.js </b>
+                ```javascript
+                    import React from 'react';
+                    import styles from './Btn.module.css';
+
+                    function Btn(props){
+                            let additionalClass=''
+                            if(props.title === 'Delete') additionalClass = styles.btnDanger
+                            else if(props.title === 'Cancel' || props.title==='Edit') additionalClass = styles.btnWarning
+                            else if(props.title === '+') additionalClass = styles.btnAdd
+                            else additionalClass = styles.btnSuccess 
+                            let btn = (
+                                <button className={styles.btn+' '+additionalClass} onClick={props.onClick}>{props.title}</button>
+                            );
+                            
+                            
+                            return btn
+                    }
+
+                    export default Btn;
+            </li>
+        </ul>
+
     </li>
 
 </ul>
