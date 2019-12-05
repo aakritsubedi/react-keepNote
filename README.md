@@ -10,10 +10,10 @@
         <img src='react-keepNote.png' style='position:absolute;height:100%;width:100%;'>
     </div>
     <div style='clear:both;'>
-        <div style='height:150px;width:48%;margin:0 auto;float:left;'>
+        <div style='height:150px;width:300px;margin:0 auto;float:left;'>
             <img src='react-keepNote1.png' style='position:absolute;height:100%;width:100%;'>
         </div>
-        <div style='height:150px;width:48%;margin:0 auto;float:right;'>
+        <div style='height:150px;width:300px;margin:0 auto;float:right;'>
             <img src='react-keepNote2.png' style='position:absolute;height:100%;width:100%;'>
         </div>
     </div>
