@@ -23,24 +23,8 @@
             <li>
                 <b>src/components/Btn/Btn.js </b>
                 ```javascript
-                    import React from 'react';
-                    import styles from './Btn.module.css';
-
-                    function Btn(props){
-                            let additionalClass=''
-                            if(props.title === 'Delete') additionalClass = styles.btnDanger
-                            else if(props.title === 'Cancel' || props.title==='Edit') additionalClass = styles.btnWarning
-                            else if(props.title === '+') additionalClass = styles.btnAdd
-                            else additionalClass = styles.btnSuccess 
-                            let btn = (
-                                <button className={styles.btn+' '+additionalClass} onClick={props.onClick}>{props.title}</button>
-                            );
-                            
-                            
-                            return btn
-                    }
-
-                    export default Btn;
+                var s = "JavaScript syntax highlighting";
+                alert(s);
                 ```
                     Initially import all the necessary libraries, other components and files(css ..). As this <b>Btn.js</b> is functional component that should return the JSX component(here variable btn) 
             </li>
