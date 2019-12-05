@@ -60,6 +60,6 @@
         <b>Website: </b> <a href='http://aakritsubedi.com.np/' target='_blank'>aakritsubedi.com.np</a> 
         <b>Address: </b> Kathmandu,Nepal
         <b>Contact No.: </b> +977-9808858237
-        <b>Social Media: </b> <a href='https://www.linkedin.com/in/aakrit-subedi-942a5875/'>linked/aakrit-subedi-942a5875</a>|| <a href='https://www.facebook.com/aakritsubedi9'>facebook/aakritsubedi9</a> || <a href='https://www.facebook.com/aakritsubedi9'> instagram/aakrit_subedi </a> || <a href='https://www.youtube.com/channel/UCQa_5vTnUERh2qAGiObqizQ'> youtube/AAkrit Subedi</a>
+        <b>Social Media: </b><a href='https://www.linkedin.com/in/aakrit-subedi-942a5875/'> linked/aakrit-subedi-942a5875 </a>||<a href='https://www.facebook.com/aakritsubedi9'> facebook/aakritsubedi9 </a>||<a href='https://www.facebook.com/aakritsubedi9'> instagram/aakrit_subedi </a>||<a href='https://www.youtube.com/channel/UCQa_5vTnUERh2qAGiObqizQ'> youtube/AAkrit Subedi</a>
     </pre>
 <code>
