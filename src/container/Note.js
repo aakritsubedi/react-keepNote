@@ -145,8 +145,8 @@ class Note extends Component{
     addNote(e){
       const inputs = e.target.parentElement.children;
       let items ={id: this.note.length+1,
-      title: inputs[0].children[0].value,
-      content: inputs[1].children[0].value,
+      title: inputs[0].children[1].value,
+      content: inputs[1].children[1].value,
       date:moment(Date.now()).format("Do MMM YYYY"),
       progress:0.6*100,
       status:'Pending',
