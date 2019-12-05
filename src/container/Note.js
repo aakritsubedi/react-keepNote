@@ -10,12 +10,19 @@ import makeData from './../constants/createData';
 class Note extends Component {
   constructor() {
     super();
-    this.note = [];
+    this.note=[];
     this.state = {
       addForm: false,
       data: this.note
     }
     this.allData();
+  }
+  componentDidMount() {
+    this.allNote = makeData(15)
+    this.note = this.allNote;
+    this.setState({
+      data: this.note
+    })
   }
   allData() {
     this.columns = [
@@ -99,10 +106,6 @@ class Note extends Component {
       }
     ];
   }
-  componentDidMount() {
-    this.data = makeData(15);
-    this.getNote('all');
-  }
   change() {
     this.setState({
       addForm: !this.state.addForm
@@ -113,32 +116,29 @@ class Note extends Component {
     this.getNote(keyword);
   }
   deleteNote(items) {
-    let indexOfItems = this.note.indexOf(items);
-    console.log(indexOfItems);
-    this.note.splice(indexOfItems, 1);
+    let indexOfItems = this.state.data.indexOf(items);
+    this.note.splice(indexOfItems, 1)
     this.setState({
-      data: this.note
+      data: [...this.note]
     })
   }
   editNote(items) {
     let indexOfItems = this.note.indexOf(items);
     this.note[indexOfItems].edit = true;
     this.setState({
-      data: this.note
-    })
+      data : this.note
+    });
   }
   saveEdit(items, e) {
     const div = e.target.parentElement.parentElement.children;
-    console.log(div);
     const title = div[1].innerText;
-    const content = div[2].innerText;
-
+    const content= div[2].innerText === '' ? null : div[2].innerText;
     let indexOfItem = this.note.indexOf(items);
     this.note[indexOfItem].title = title;
     this.note[indexOfItem].content = content;
     this.note[indexOfItem].edit = false;
     this.setState({
-      data: this.note
+      data: [...this.note]
     })
   }
   addNote(e) {
@@ -160,7 +160,7 @@ class Note extends Component {
   }
   getNote(keyword) {
     if (keyword === 'all') {
-      this.data.forEach(items => {
+      this.allNote.forEach(items => {
         if (items.deleted === false) {
           this.note.push(
             items
@@ -170,7 +170,7 @@ class Note extends Component {
     }
     else {
       this.note = [];
-      this.data.forEach(items => {
+      this.allNote.forEach(items => {
         let title = items.title.toLowerCase();
         if (title.includes(keyword.toLowerCase()) && items.deleted === false) {
           this.note.push(
@@ -184,6 +184,7 @@ class Note extends Component {
     })
   }
   render() {
+    console.log("Render");
     let noteBox = this.state.data.map(item => {
       return <NoteBox key={item.id} title={item.title} content={item.content} date={item.date} delete={() => this.deleteNote(item)} edit={() => this.editNote(item)} save={(e) => this.saveEdit(item, e)} editStatus={item.edit} />
     })
@@ -195,7 +196,7 @@ class Note extends Component {
         <hr />
         <div className='noteContainer'>
           <h2>My Notes</h2>
-          {noteBox}
+          {noteBox} 
         </div>
 
       </>
