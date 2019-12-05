@@ -41,11 +41,25 @@
         <li>git clone git@github.com:aakritsubedi/react-keepNote.git</li>
         <li>open the folder in the editor of your choice</li> 
     </ul>
+    <li>route to the directory in terminal</li>
     <li>yarn install/ npm install - installs all the dependencies and packages</li>
     <li>yarn start/ npm start</li>
+    <b>-all the basic installation to run react application should be configured</b>
 </ul>
 <hr>
 <h4>Extra Package</h4>
 <ul>
-    <li><a href='https://github.com/tannerlinsley/react-table'>React Table</a><li>
+    <li><a href='https://www.npmjs.com/package/react-table/v/6.8.6' target='_blank'>react-table v6.8.6</a></li>
+    <li><a href='https://www.npmjs.com/package/react-icons' target='_blank'>react-icons</a></li>
+    <li><a href='https://www.npmjs.com/package/react-moment' target='_blank'>moment</a></li>
 </ul>
+<hr>
+<code>
+    <pre>
+        <b>Name: </b> AAkrit Subedi
+        <b>Email: </b> <a href='mailto:aakritsubedi9@gmail.com'>aakritsubedi9@gmail.com</a>
+        <b>Website: </b> <a href='http://aakritsubedi.com.np/' target='_blank'>AAkrit Subedi</a>
+        <b>Address: </b> Kathmandu,Nepal
+        <b>Contact No.: </b> +977-9808858237
+    </pre>
+<code>
