@@ -22,10 +22,10 @@
         <ul>
             <li>
                 <b>src/components/Btn/Btn.js </b>
-                ```javascript
-                var s = "JavaScript syntax highlighting";
-                alert(s);
-                ```
+                <code>
+                    var s = "JavaScript syntax highlighting";
+                    alert(s);
+                </code>
                     Initially import all the necessary libraries, other components and files(css ..). As this <b>Btn.js</b> is functional component that should return the JSX component(here variable btn) 
             </li>
         </ul>
